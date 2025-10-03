@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <p>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" autocomplete="name" size="30" placeholder="Seu nome completo" required>
+            </p>
+            <p>
+                <label for="iidade">Idade: </label>
+                <input type="number" name="idade" id="iidade" min="18" required>
+            <p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="sexo" id="sexomas"> <label for="sexomas">Masculino</label>
+                    <input type="radio" name="sexo" id="sexofem"> <label for="sexofem">Feminino</label>
+                </p>
+        </fieldset>
+
+                <fieldset>
+                    <legend>Mais informações</legend>
+                    <p>
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado">
+                            <optgroup label="Região nordeste">
+                                <option value="PE">Pernambuco</option>
+                                <option value="BA">Bahia</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="PI">Piauí</option>
+                                <option value="MA">Maranhão</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="profissao">Profissão: </label>
+                            <input type="tel" name="profissao" id="profissao" list="profissoes">
+                        <datalist id="profissoes">
+                            <option value="ADM">Assistente administrativo</option>
+                            <option value="DEV">Desenvolvedor</option>
+                        </datalist>
+                    </p>
+                </fieldset>
+            <fieldset>
+                <legend>Interesses</legend>
+                <p>
+                    <input type="checkbox" name="fullstack" id="fullstack" checked> <label for="fullstack">fullstack</label> <br>
+                    <input type="checkbox" name="backend" id="backend"> <label for="backend">Back-End</label>  <br>
+                    <input type="checkbox" name="frontend" id="frontend"> <label for="frontend">Front-End </label> <br>
+                    <input type="checkbox" name="ia" id="ia"> <label for="ia">Inteligência </label>artificial <br>
+            </fieldset>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
